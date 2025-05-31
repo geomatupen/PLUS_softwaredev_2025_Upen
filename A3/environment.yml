@@ -1,0 +1,9 @@
+name: geoenv
+channels:
+  - defaults
+dependencies:
+  - gdal
+  - jupyter
+  - python=3.11
+  - rasterio
+prefix: C:\Users\ROG\.conda\envs\geoenv
