@@ -2,6 +2,7 @@
 
 This README provides step-by-step instructions to set up a Conda environment named `geoenv` with geospatial libraries like GDAL and Rasterio, and configure it for use in Jupyter Notebook.
 
+
 ---
 
 ## Step 1: Create and Activate the Conda Environment
@@ -19,6 +20,7 @@ conda activate geoenv
 conda activate geoenv
 ```
 
+
 ---
 
 ## Step 2: Export the Conda Environment to `environment.yml`
@@ -30,6 +32,7 @@ conda env export --from-history > environment.yml
 ```
 
 This will generate a file called `environment.yml` that lists the environment configuration. It can be used to recreate the environment later.
+
 
 ---
 
@@ -43,6 +46,7 @@ python -m ipykernel install --user --name=geoenv --display-name "Python (geoenv)
 
 After this, you will see "Python (geoenv)" as an option under **Kernel > Change kernel** in the Jupyter Notebook interface.
 
+
 ---
 
 ## Step 4: Activate the Environment (if not already activated)
@@ -52,6 +56,7 @@ After this, you will see "Python (geoenv)" as an option under **Kernel > Change 
 ```
 conda activate geoenv
 ```
+
 
 ---
 
@@ -65,6 +70,7 @@ jupyter notebook
 
 This will open the Jupyter interface in your web browser.
 
+
 ---
 
 ## Step 6: Choose the `geoenv` Kernel in Jupyter
@@ -75,7 +81,11 @@ In the Jupyter Notebook interface:
 2. Go to the top menu: **Kernel > Change Kernel**.  
 3. Select **Python (geoenv)**.  
 
-Your notebook will now run using the `geoenv` environment.
+Your notebook will now run using the `geoenv` environment. Now you can run the rasterio_gdal_band_stacker.ipynb file to stack the images.
+
+
+
+
 
 ---
 
@@ -103,6 +113,8 @@ python -m ipykernel install --user --name=geoenv --display-name "Python (geoenv)
 ```
 
 5. Launch Jupyter Notebook and select the Python (geoenv) kernel.
+
+Now you can run the rasterio_gdal_band_stacker.ipynb file to stack the images.
 
 ---
 
