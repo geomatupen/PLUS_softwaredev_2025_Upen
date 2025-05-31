@@ -122,5 +122,5 @@ Now you can run the rasterio_gdal_band_stacker.ipynb file to stack the images.
 
 - Anaconda: https://docs.anaconda.com/  
 - Rasterio: https://rasterio.readthedocs.io/  
-- GDAL Python Bindings: https://gdal.org/api/python.html  
+- GDAL Python Bindings: https://gdal.org/en/stable/api/python/raster_api.html  
 - Jupyter Notebook: https://jupyter-notebook.readthedocs.io/
