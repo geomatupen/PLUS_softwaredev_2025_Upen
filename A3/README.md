@@ -1,4 +1,4 @@
-# Geospatial Jupyter Environment Setup (`geoenv`)
+# Geospatial Jupyter Environment Setup (`geoenv`) before running the code.
 
 This README provides step-by-step instructions to set up a Conda environment named `geoenv` with geospatial libraries like GDAL and Rasterio, and configure it for use in Jupyter Notebook.
 
