@@ -68,8 +68,16 @@ def latlon_to_utm(lat: float, lon: float) -> tuple:
     Returns:
         tuple: (easting, northing, utm_zone)
     """
+    # Calculate the UTM zone number based on longitude
     utm_zone = int((lon + 180) / 6) + 1
+
+    # Define the UTM projection string for the calculated zone (WGS84 datum)
     proj_str = f"+proj=utm +zone={utm_zone} +datum=WGS84 +units=m +no_defs"
+
+    # Create a transformer object to convert from geographic (lat/lon) to UTM
     transformer = Transformer.from_crs("epsg:4326", proj_str, always_xy=True)
+
+    # Perform the transformation: note that 'always_xy=True' means input is (lon, lat)
     easting, northing = transformer.transform(lon, lat)
+    
     return easting, northing, utm_zone
