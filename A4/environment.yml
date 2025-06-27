@@ -1,0 +1,10 @@
+name: eo_env
+channels:
+  - defaults
+dependencies:
+  - jupyter
+  - numpy
+  - pyproj
+  - python=3.10
+  - rasterio
+
